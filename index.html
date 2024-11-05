@@ -3,35 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MINZY ROLLER COSTER ATTITUDE</title>
+    <title>Special Message</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
         }
-        .content {
+        .container {
             text-align: center;
-            padding: 20px;
-            border: 2px solid #333;
-            border-radius: 10px;
-            background-color: #fff;
-            width: 300px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
         }
         h1 {
-            color: #333;
+            font-size: 2em;
+            color: #d84315;
+            margin-bottom: 20px;
         }
-        #punchline {
+        p {
+            font-size: 1.2em;
+            color: #444;
+        }
+        #proposal {
             display: none;
-            color: green;
+            color: #e91e63;
             font-weight: bold;
+            font-size: 1.5em;
             margin-top: 20px;
         }
         button {
             margin-top: 20px;
-          
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #d84315;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #bf360c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>A Special Message</h1>
+    <p>There’s something I’ve been wanting to tell you...</p>
+    <p>You make my days brighter, my heart fuller, and my life so much more beautiful.</p>
+    <p>I can’t imagine a future without you by my side.</p>
+    <button onclick="showProposal()">Click to see my heart’s wish...</button>
+
+    <p id="proposal">Will you marry me? 💍❤️</p>
+</div>
+
+<script>
+    function showProposal() {
+        document.getElementById("proposal").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
