@@ -52,11 +52,23 @@
         .prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
+
+         /* Animation for custom message */
+        .custom-message {
+            font-size: 24px;
+            color: #4CAF50;
+            font-weight: bold;
+            animation: fadeInZoom 2s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInZoom {
+            0% { opacity: 0; transform: scale(0.5); }
+            100% { opacity: 1; transform: scale(1); }
+        }
     </style>
 </head>
 <body>
-
-<h2 style="text-align:center">My Love</h2>
 
 <div class="slideshow-container">
     <!-- Slideshow images with captions -->
@@ -88,6 +100,11 @@
 <div class="slides">
         <div class="caption">Making face and I will laugh </div>
         <img src="Minzymakingmelaugh.jpg" alt="Image 6">
+    </div>
+
+      <div class="slides">
+        <div class="caption">Hello My Love, </div>
+        <div class="custom-message">I Love You</div>
     </div>
     
     <!-- Navigation buttons -->
